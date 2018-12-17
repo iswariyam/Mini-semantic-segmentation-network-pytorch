@@ -27,6 +27,8 @@ class Metric():
         
         self.confusion_matrix = np.ndarray((num_classes, num_classes), dtype=np.int64)
         
+        return
+        
     def reset(self):
         '''Method to reset the confusion matrix.
         
@@ -34,6 +36,8 @@ class Metric():
         '''
         
         self.confusion_matrix.fill(0)
+
+        return
         
     def get_confusion_matrix(self, predicted, target):
         '''Method to generate a confusion matrix using the predicted and target images.
@@ -51,6 +55,8 @@ class Metric():
         target_val = target.detach().cpu().detach().numpy()
         cm = confusion_matrix(target_val.flatten(), predicted_val.flatten())
         self.confusion_matrix += cm
+
+        return
         
     def get_iou(self, predicted, target):
         '''Method to compute the IoU from the confusion matrix
@@ -107,3 +113,5 @@ def plot_confusion_matrix(cm, classes):
 
     plt.savefig("Results/Confusion_matrix.png")
     plt.close()
+
+    return
