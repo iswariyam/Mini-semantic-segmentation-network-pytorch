@@ -23,11 +23,11 @@ The network is trained on a dataset of Robocup soccer images to segment the fiel
 <p align="center">
   <img src="./images/train_image1.jpg" width="150">
   <img src="./images/train_image2.png" width="150">
-  <img src="./images/train_image3.jpg" width="150">
   <img src="./images/train_image4.png" width="150">
   <img src="./images/train_image5.jpg" width="150">
   <img src="./images/train_image5.png" width="150">
 </p>
+[Figure: Examples of training images]
 
 <img src="./images/output_example.png" width="900"/>
 [Figure: The image on the left in each pair
