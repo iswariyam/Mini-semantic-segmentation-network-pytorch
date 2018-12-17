@@ -25,7 +25,7 @@ The network is trained on a dataset of Robocup soccer images to segment the fiel
   <img src="./images/train_image2.png" width="150">
   <img src="./images/train_image4.png" width="150">
   <img src="./images/train_image5.jpg" width="150">
-  <img src="./images/train_image5.png" width="150">
+  <img src="./images/train_image6.png" width="150">
 </p>
 [Figure: Examples of training images]
 
@@ -47,4 +47,3 @@ puting and computer-assisted intervention, pp. 234–241, Springer, 2015.
 3. L. N. Smith, “Cyclical learning rates for training neural networks,” in Applications of
 Computer Vision (WACV), 2017 IEEE Winter Conference on, pp. 464–472, IEEE,
 2017.
-
