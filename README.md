@@ -3,8 +3,8 @@ This repository contains an implementation of a miniature version of the UNet ar
 The architecture and training methodology is based on this paper https://arxiv.org/pdf/1810.08395.pdf.
 
 ## Highlights of the architecture
-* It is a fully convolutional neural network, with the encoder-decoder architecture used in SegNet[1].
-* It has lateral skip connections as introduced in UNet[2].
+* It is a fully convolutional neural network, with the encoder-decoder architecture used in SegNet [1].
+* It has lateral skip connections as introduced in UNet [2].
 * The main difference between UNet and this architecture is that the decoder is made smaller and hence the segmented output of the network is only one-fourth of the input.
 * This significantly reduces the number of parameters of the network and allows for resource efficient inference, for instance in robots used in Robocup soccer.
 
@@ -14,11 +14,19 @@ The architecture and training methodology is based on this paper https://arxiv.o
 * For the first 30 epochs, the network is trained on low-resolution images with frozen encoder weights, thereby only optimizing the decoder weights.
 * For the next 15 epochs, the network is trained on low-resolution images with the weights of the encoder unfrozen.
 * Then the entire network is trained on full resolution images until 80 epochs.
-* The appropriate learning rate is chosen based on cyclical learning rates[3].
+* The appropriate learning rate is chosen based on cyclical learning rates [3].
 
 ## Examples of segmented images
 
 The network is trained on a dataset of Robocup soccer images to segment the field, field lines and the ball.
+
+<p align="center">
+  <img src="./images/train_image1.jpg" width="350">
+  <img src="./images/train_image2.png" width="350">
+  <img src="./images/train_image3.jpg" width="350">
+  <img src="./images/train_image4.png" width="350">
+  <img src="./images/train_image5.jpg" width="350">
+</p>
 
 <img src="./images/output_example.png" width="900"/>
 [Figure: The image on the left in each pair
