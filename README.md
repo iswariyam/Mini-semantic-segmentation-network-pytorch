@@ -21,11 +21,12 @@ The architecture and training methodology is based on this paper https://arxiv.o
 The network is trained on a dataset of Robocup soccer images to segment the field, field lines and the ball.
 
 <p align="center">
-  <img src="./images/train_image1.jpg" width="350">
-  <img src="./images/train_image2.png" width="350">
-  <img src="./images/train_image3.jpg" width="350">
-  <img src="./images/train_image4.png" width="350">
-  <img src="./images/train_image5.jpg" width="350">
+  <img src="./images/train_image1.jpg" width="150">
+  <img src="./images/train_image2.png" width="150">
+  <img src="./images/train_image3.jpg" width="150">
+  <img src="./images/train_image4.png" width="150">
+  <img src="./images/train_image5.jpg" width="150">
+  <img src="./images/train_image5.png" width="150">
 </p>
 
 <img src="./images/output_example.png" width="900"/>
